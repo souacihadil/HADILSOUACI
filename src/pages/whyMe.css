@@ -1,0 +1,165 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whyme-container {
+  background: #f8f8f8;
+  padding: 80px 2rem 4rem 250px;
+  color: #333;
+  min-height: auto;
+  font-family: "Cairo", sans-serif;
+}
+
+.whyme-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whyme-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 90px;
+  height: 4px;
+  background-color: #F7C948;
+  margin: 0.6rem auto 1.5rem auto;
+  border-radius: 10px;
+}
+
+.whyme-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: center;
+}
+
+.highlighted-line {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.ai-projects {
+  color: #F7C948;
+}
+
+.whyme-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.whyme-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.whyme-card.primary {
+  background: #F7C948;
+  color: #000;
+}
+
+.whyme-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.whyme-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.whyme-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #F7C948;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #FFC312;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.card-icon-inline {
+  font-size: 1.5rem;
+  color: #FFC312;
+  margin-left: 0;
+}
+
+.whyme-card.primary {
+  background: #FFC312;
+  color: #fff;
+}
+
+.whyme-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.whyme-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.whyme-card .card-icon-inline:hover {
+  transform: scale(1.3);
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.whyme-card.primary .card-title {
+  color: #fff;
+}
+
+.whyme-card.primary .card-icon-inline {
+  color: #fff;
+}
+
+.whyme-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .whyme-container {
+    padding-left: 2rem;
+  }
+
+  .whyme-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

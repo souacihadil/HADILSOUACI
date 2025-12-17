@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+/* الحاوية الرئيسية */
+.about-container {
+    background: #000000;
+    padding: 80px 2rem 4rem 250px; /* حافظنا على البادينغ الأيسر للناف بار */
+    color: white;
+    min-height: 100vh;
+}
+
+/* العنوان */
+.about-header {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* ===== عنوان القسم ===== */
+.about-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.discover {
+    font-size: 0.9rem; /* أصغر حجم */
+    color: #F7C948;    /* اللون الذهبي */
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem; /* مسافة بسيطة أسفلها */
+    text-align: center; /* أو left حسب التصميم */
+}
+
+
+.about-main {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+}
+
+.about-main span {
+    color: #ffffff;
+}
+
+/* الخط تحت كلمة About */
+.underline {
+    width: 90px;
+    height: 4px;
+    background-color: #F7C948;
+    margin: 0.6rem auto 0 auto;
+    border-radius: 10px;
+}
+
+.small-title {
+    color: #F7C948;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+    margin-bottom: -2rem; /* قللي المسافة بعد العنوان */
+    display: inline-block;
+    white-space: normal;
+    word-break: break-word;
+}
+
+
+.main-title span {
+    color: #F7C948;
+}
+
+/* الفقرة */
+.about-text {
+    max-width: 100%; /* السماح للنص بالاستفادة من كل مساحة الحاوية */
+    margin-top: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    white-space: normal; /* السماح بالنقل للسطر */
+    word-wrap: break-word; /* كسر الكلمات الطويلة إذا خرجت */
+}
+
+/* المعلومات الشخصية */
+.info-box {
+    margin: 2rem 0;
+    color: #ddd;
+}
+
+.info-box strong {
+    color: #18D26E;
+}
+
+/* ======================== SKILLS SECTION ======================== */
+
+.skills-section {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+.skill-icon {
+  font-size: 55px;
+  transition: 0.3s ease;
+}
+.skill-icon {
+    color: #F7C948;
+}
+
+
+/* Hover Effect */
+.skill-item:hover .skill-icon {
+  transform: scale(1.18) rotate(4deg);
+}
+
+
+.skill-item p {
+  margin-top: 10px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* subtle float animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+/* subtle floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container {
+        padding-left: 2rem; /* لتصغير البادينغ على الموبايل */
+    }
+    skills-title {
+    font-size: 26px;
+  }
+
+  .skill-item img {
+    width: 50px;
+  }
+}
