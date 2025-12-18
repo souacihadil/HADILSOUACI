@@ -12,8 +12,6 @@ import land1 from "../images/landinp1.png";
 import land2 from "../images/landp2.png";
 import land3 from "../images/landing page.png";
 import land4 from "../images/landp3.png";
-import land5 from "../images/menassa.png";
-import dashboard from "../images/dashboard.png";
 import cur1 from "../images/onlinePl.jpg";
 import cur2 from "../images/onlinShop1.jpg";
 import cur3 from "../images/onlinShop2.jpg";
