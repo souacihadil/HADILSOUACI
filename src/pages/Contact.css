@@ -143,20 +143,33 @@
   100% { transform: translateY(0); }
 }
 
-/* RESPONSIVE */
 /* ================== RESPONSIVE ================== */
 
-/* Tablet */
+/* Large screens (Desktop & Laptop) */
+@media (min-width: 993px) {
+  .contact-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* توسيط عمودي */
+  }
+}
+
+/* Tablets */
 @media (max-width: 992px) {
   .contact-section {
-    padding-left: 40px;
-    padding-right: 40px;
-    min-height: auto;
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
   }
 
   .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+
+  .contact-left {
+    max-width: 100%;
   }
 
   .contact-title {
@@ -167,8 +180,13 @@
 /* Mobile */
 @media (max-width: 576px) {
   .contact-section {
-    padding: 80px 20px;
-    align-items: flex-start;
+    min-height: auto;
+    padding: 70px 20px;
+    align-items: flex-start; /* من الأعلى */
+  }
+
+  .contact-wrapper {
+    gap: 40px;
   }
 
   .contact-title {
@@ -177,6 +195,7 @@
 
   .contact-text {
     font-size: 0.95rem;
+    line-height: 1.7;
   }
 
   .contact-links {
@@ -189,6 +208,8 @@
 
   .send-btn {
     width: 100%;
+    padding: 16px 0;
     text-align: center;
   }
 }
+
