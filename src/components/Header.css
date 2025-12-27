@@ -74,32 +74,41 @@
 /* =================== MOBILE HEADER FIX =================== */
 @media (max-width: 992px) {
 
-  /* تكبير شعار الموقع */
+  /* الهيدر كامل */
+  .sidebar {
+    flex-direction: row;          /* صف واحد */
+    justify-content: space-between; /* الشعار على اليسار والروابط على اليمين */
+    align-items: center;           /* المحتوى عمودي في الوسط */
+    padding: 1.5rem 2rem;
+    height: auto;
+  }
+
+  /* الشعار */
+  .logo {
+    display: flex;
+    align-items: center;           /* logo و logo-code في نفس السطر */
+    gap: 8px;                      /* مسافة بين النصوص */
+  }
+
   .logo h1 {
-    font-size: 32px;       /* أكبر من السابق */
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;    /* محتوى الشعار في المنتصف */
+    font-size: 28px;               /* حجم جيد للهاتف */
+    margin: 0;
   }
 
   .logo-code {
-    font-size: 16px;       /* تكبير قليلاً */
-    display: block;
-    text-align: center;
-    margin-top: -4px;
+    font-size: 16px;
+    vertical-align: baseline;
+    margin-top: 0;
   }
 
-  /* محاذاة nav-links في الوسط */
+  /* روابط التنقل */
   .nav-links {
-    justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    gap: 15px;
   }
 
-  /* إذا حبيت تخلي الهيدر أعرض */
-  .sidebar {
-    padding: 1.5rem 2rem;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(160, 159, 159, 0.1);
+  .sidebar-footer {
+    display: none; /* إخفاء أيقونات الفوتر في الهاتف */
   }
 }
 
