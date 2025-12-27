@@ -71,25 +71,35 @@
 }
 
 /* Responsive Navbar */
+/* =================== MOBILE HEADER FIX =================== */
 @media (max-width: 992px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  /* تكبير شعار الموقع */
+  .logo h1 {
+    font-size: 32px;       /* أكبر من السابق */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;    /* محتوى الشعار في المنتصف */
+  }
+
+  .logo-code {
+    font-size: 16px;       /* تكبير قليلاً */
+    display: block;
+    text-align: center;
+    margin-top: -4px;
+  }
+
+  /* محاذاة nav-links في الوسط */
+  .nav-links {
+    justify-content: center;
     width: 100%;
+  }
+
+  /* إذا حبيت تخلي الهيدر أعرض */
+  .sidebar {
+    padding: 1.5rem 2rem;
     height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 4rem;
     box-shadow: 0 2px 5px rgba(160, 159, 159, 0.1);
   }
-
-  .nav-links {
-    flex-direction: row;
-    gap: 1.5rem;
-  }
-
-  .sidebar-footer {
-    display: none; /* إخفاء الأيقونات عند الشاشات الصغيرة */
-  }
 }
+
