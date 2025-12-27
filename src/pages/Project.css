@@ -196,6 +196,27 @@
     height: 400px;
   }
 }
+@media (max-width: 768px) {
+  .projects-grid.long-screenshots {
+    flex-direction: row;       /* صف أفقي */
+    overflow-x: auto;          /* يسمح بالسحب أفقياً */
+    gap: 10px;                 /* مسافة بسيطة بين الصور */
+    padding: 10px 0;           /* padding بسيط */
+    height: auto;              /* ارتفاع ديناميكي */
+    scroll-snap-type: x mandatory; /* خيار جميل للتثبيت أثناء السحب */
+  }
+
+  .projects-grid.long-screenshots .project-card {
+    flex: 0 0 auto;            /* عرض ثابت حسب المحتوى */
+    width: 80%;                /* ممكن تعدلي حسب رغبتك */
+    scroll-snap-align: start;  /* تثبيت عند بداية العنصر */
+  }
+
+  .projects-grid.long-screenshots .project-card img {
+    height: auto;              /* يحافظ على نسبة الصورة */
+    max-height: 300px;         /* ارتفاع مناسب للهاتف */
+  }
+}
 
 @media (max-width: 576px) {
   .projects-grid.big,
